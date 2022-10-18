@@ -1,5 +1,4 @@
 import 'package:advanced_project/presentation/main/pages/home/view/home_page.dart';
-import 'package:advanced_project/presentation/main/pages/notifications/notifications_page.dart';
 import 'package:advanced_project/presentation/main/pages/search/search_page.dart';
 import 'package:advanced_project/presentation/main/pages/settings/settings_page.dart';
 import 'package:easy_localization/easy_localization.dart';
@@ -20,13 +19,13 @@ class _MainViewState extends State<MainView> {
   List<Widget> pages = const [
     HomePage(),
     SearchPage(),
-    NotificationsPage(),
+    //NotificationsPage(),
     SettingsPage()
   ];
   List<String> titles = [
     AppStrings.home.tr(),
     AppStrings.search.tr(),
-    AppStrings.notifications.tr(),
+    //AppStrings.notifications.tr(),
     AppStrings.settings.tr(),
   ];
 
@@ -54,9 +53,9 @@ class _MainViewState extends State<MainView> {
                 icon: const Icon(Icons.home_outlined), label: AppStrings.home.tr()),
             BottomNavigationBarItem(
                 icon: const Icon(Icons.search), label: AppStrings.search.tr()),
-            BottomNavigationBarItem(
-                icon: const Icon(Icons.notifications),
-                label: AppStrings.notifications.tr()),
+            // BottomNavigationBarItem(
+            //     icon: const Icon(Icons.notifications),
+            //     label: AppStrings.notifications.tr()),
             BottomNavigationBarItem(
                 icon: const Icon(Icons.settings), label: AppStrings.settings.tr()),
           ],

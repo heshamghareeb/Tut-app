@@ -107,8 +107,8 @@ class _LoginViewState extends State<LoginView> {
                           keyboardType: TextInputType.visiblePassword,
                           controller: _userPasswordController,
                           decoration: InputDecoration(
-                              hintText: AppStrings.password,
-                              labelText: AppStrings.password,
+                              hintText: AppStrings.password.tr(),
+                              labelText: AppStrings.password.tr(),
                               errorText: (snapshot.data ?? true)
                                   ? null
                                   : AppStrings.passwordError.tr()),
